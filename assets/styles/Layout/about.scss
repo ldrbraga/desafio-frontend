@@ -1,0 +1,16 @@
+.about{
+    font-family: 'Roboto', sans-serif;
+    padding: 100px 0;
+    .about__title{
+        font-size: 32px; 
+        letter-spacing: 3px;
+        text-align: center;
+        font-weight: 600;
+    }
+    .about__content{
+        margin-top: 80px;
+        p{
+            margin-top: 30px;
+        }
+    }
+}

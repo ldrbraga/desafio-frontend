@@ -1,0 +1,34 @@
+.github__card{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    margin-top: 80px;
+    padding: 50px;
+    .github__card__image{
+        img{
+            border-radius: 50%;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+            figcaption{
+                text-align: center;
+                margin-top: 20px;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .github__card__info{
+        margin-left: 100px;
+        .github__card__info__repository{
+            p{
+                text-transform: uppercase;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

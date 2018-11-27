@@ -1,0 +1,7 @@
+$mobile-only: 768px;
+
+@mixin m{
+	@media (max-width: $mobile-only){
+		@content;
+	}
+}

@@ -11,7 +11,7 @@
     "url": "git+https://github.com/ldrbraga/desafio-frontend.git"
   },
   "keywords": [
-    "Game"
+    "qconcursos"
   ],
   "author": "Leandro Braga",
   "license": "ISC",
@@ -31,6 +31,7 @@
     "gulp-babel": "^8.0.0",
     "gulp-browserify": "^0.5.1",
     "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^5.0.3",
     "gulp-live-server": "0.0.31",
     "gulp-livereload": "^3.8.1",
     "gulp-minify": "^2.1.0",

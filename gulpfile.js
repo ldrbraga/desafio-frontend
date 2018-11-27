@@ -4,10 +4,11 @@ const watch = require('gulp-watch');
 const concat = require('gulp-concat');
 const livereload = require('gulp-livereload');
 const minify = require('gulp-minify');
+const imagemin = require('gulp-imagemin');
 const webserver = require('gulp-webserver');
 const babel = require('gulp-babel');
 
-gulp.task('default', ['webserver', 'sass', 'watch', 'compress']);
+gulp.task('default', ['webserver', 'sass', 'imagemin', 'watch', 'compress']);
 
 gulp.task('sass', function () {
   return gulp.src('assets/styles/**/*.scss')
@@ -36,10 +37,16 @@ gulp.task('compress', function () {
     .pipe(livereload());
 });
 
+gulp.task('imagemin', function(){
+	return gulp.src('assets/images/*')
+	.pipe(imagemin())
+	.pipe(gulp.dest('public/images/'));
+});	
+
 gulp.task('watch', function () {
   gulp.watch('assets/styles/**/*.scss', ['sass']);
   gulp.watch('assets/scripts/*.js', ['compress']);
-  gulp.watch('/*.html');
+  gulp.watch('*.html');
 	livereload.listen();
 });
 
@@ -51,3 +58,5 @@ gulp.task('webserver', ['watch'], function () {
       open: true,
     }))
 });
+
+
