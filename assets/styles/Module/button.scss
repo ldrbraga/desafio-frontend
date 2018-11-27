@@ -1,9 +1,11 @@
-.github__card__info__btn{
+.github__card__info__btn {
     @include mobile {
         padding: 0 20px;
     }
+
     margin-top: 110px;
-    button{
+
+    button {
         background-color: transparent;
         border: 2px solid $black-color;
         color: $black-color;
@@ -13,15 +15,17 @@
         text-transform: uppercase;
         font-weight: 600;
         transition: .4s;
-        &:hover{
+
+        &:hover {
             background-color: $black-color;
             color: $white-color;
-        } 
+        }
+
         @include mobile {
             margin: 0;
             width: 100%;
             margin-bottom: 20px;
         }
-        
+
     }
 }

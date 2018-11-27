@@ -42,9 +42,10 @@ header {
                     text-decoration: none;
                     color: $white-color;
                     font-weight: 600;
-                    &:hover{
-                       text-decoration: underline;
-                    } 
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
         }
