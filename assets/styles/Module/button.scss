@@ -5,19 +5,18 @@
     margin-top: 110px;
     button{
         background-color: transparent;
-        border: 2px solid #000;;
-        color: #000;
+        border: 2px solid $black-color;
+        color: $black-color;
         padding: 10px 40px;
         margin-right: 20px;
-        @include mobile {
-            margin: 0;
-        }
         cursor: pointer;
         text-transform: uppercase;
         font-weight: 600;
         @include mobile {
+            margin: 0;
             width: 100%;
             margin-bottom: 20px;
         }
+        
     }
 }

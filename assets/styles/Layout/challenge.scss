@@ -1,6 +1,6 @@
 .challenge{
-    font-family: 'Roboto', sans-serif;
-    background-color: #ebf6ee;
+    font-family: $font;
+    background-color: $lightgreen-color;
     padding: 80px 0;
     &__title{
         font-size: 32px; 

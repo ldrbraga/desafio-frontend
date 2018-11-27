@@ -1,8 +1,7 @@
 footer{
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    justify-content: center;
-    background-color: #000;
+    font-family: $font;
+    background-color: $black-color;
     color: $white-color;
     padding: 30px;
+    text-align: center;
 }
