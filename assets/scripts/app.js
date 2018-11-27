@@ -3,7 +3,7 @@ const getDatas = {
       fetch('https://api.github.com/users/ldrbraga')
         .then(response => response.json())
         .then(dataUser => {
-          console.log(dataUser) // Prints result from response.json() in getRequest
+          // console.log(dataUser) // Prints result from response.json() in getRequest
 
           const urlRepo = dataUser.repos_url
           const urlStar = dataUser.subscriptions_url    
@@ -68,11 +68,11 @@ const getDatas = {
       fetch(url)
         .then(response => response.json())
         .then(dataRepo => {
-          console.log(dataRepo) // Prints result from response.json() in getRequest
-          const html = `<div class="github__card__info__result__title">
+          // console.log(dataRepo) // Prints result from response.json() in getRequest
+          const html = `<div class="github__card__result__title">
                         <h3>lista de favoritos</h3>
                         </div>
-                        <div class="github__card__info__result__list">
+                        <div class="github__card__result__list">
                             <ul>
                               ${
                                 dataRepo.map( (item) => {
@@ -82,7 +82,7 @@ const getDatas = {
                             </ul>
                         </div>`
 
-          document.querySelector('.github__card__info__result').innerHTML = html;
+          document.querySelector('.github__card__result').innerHTML = html;
       })
       .catch(error => console.error(error))
   }
@@ -94,14 +94,18 @@ const eventContructHtml = {
       getDatas.getRepoUser(urlRepoGet)  
 
       setTimeout(() => {
-        document.querySelector('.github__card__info__result').classList.add('dropdown')
+        document.querySelector('.github__card__result').classList.add('dropdown')
       }, 1000)
     })
   },
 
   eventContructHtmlStar : (urlStarGet) => {
     document.querySelector('.btn__list__star').addEventListener('click', () => {
-      getDatas.getRepoStar(urlStarGet)  
+      getDatas.getRepoStar(urlStarGet)
+
+      setTimeout(() => {
+        document.querySelector('.github__card__result').classList.add('dropdown')
+      }, 1000)  
     })
   }
 }

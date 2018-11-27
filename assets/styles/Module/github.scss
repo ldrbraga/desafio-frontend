@@ -61,6 +61,11 @@
         max-height: 0;
         overflow: hidden;
 
+        &.dropdown {
+            max-height: 1000px;
+            transition: all 1s ease;
+        }
+
         &__title {
             margin: 30px 50px;
             text-transform: uppercase;
