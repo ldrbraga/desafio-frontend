@@ -1,6 +1,6 @@
 $mobile-only: 768px;
 
-@mixin m{
+@mixin mobile{
 	@media (max-width: $mobile-only){
 		@content;
 	}

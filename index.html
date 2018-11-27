@@ -18,8 +18,8 @@
                 <nav>
                     <ul class="topbar__nav__menu">
                         <li class="topbar__nav__menu__item"><a href="#">Home</a></li>
-                        <li class="topbar__nav__menu__item"><a href="#">Sobre</a></li>
-                        <li class="topbar__nav__menu__item"><a href="#">Desafio</a></li>
+                        <li class="topbar__nav__menu__item"><a href="#about">Sobre</a></li>
+                        <li class="topbar__nav__menu__item"><a href="#challenge">Desafio</a></li>
                     </ul>
                 </nav>
             </div>
@@ -66,7 +66,7 @@
     </header>
 
     <main>
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <div class="about__title">
                     <h2>Sobre</h2>
@@ -87,33 +87,13 @@
         </section>
 
 
-        <section class="challenge">
+        <section class="challenge" id="challenge">
             <div class="container">
                 <div class="challenge__title">
                     Desafio
                 </div>
 
-                <div class="github__card">
-                    <div class="github__card__image">
-                        <figure>
-                            <img src="assets/images/tc.png" alt="">
-                            <a href="#" target="_blank">
-                                <figcaption>visitar perfil</figcaption>
-                            </a>
-                        </figure>
-                    </div> 
-                    <div class="github__card__info">
-                        <div class="github__card__info__repository">
-                            <p>repositórios: 15</p>
-                            <p>seguidores: 100</p>
-                            <p>seguindo: 100</p>
-                        </div>
-
-                        <div class="github__card__info__btn">
-                            <button>ver repositórios</button>
-                            <button>ver favoritos</button>
-                        </div>
-                    </div>   
+                <div class="github__card">  
                 </div>
             </div>
         </section>
@@ -122,5 +102,8 @@
     <footer>
         <p>Desafio Desenvolvedor Front Qconcursos.com</p>
     </footer>
+
+    <script src="public/scripts/app-min.js"></script>
+    <script src="public/scripts/scroll-min.js"></script>
 </body>
 </html>

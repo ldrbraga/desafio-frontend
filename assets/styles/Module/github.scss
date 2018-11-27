@@ -5,9 +5,21 @@
     background-color: #fff;
     margin-top: 80px;
     padding: 50px;
-    .github__card__image{
+    box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
+    @include mobile {
+        width: 100%;
+        padding: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__image{
         img{
             border-radius: 50%;
+            width: 100%;
+            max-width: 200px;
+            height: auto;
         }
         a{
             text-decoration: none;
@@ -21,13 +33,47 @@
         }
     }
 
-    .github__card__info{
+    &__info{
         margin-left: 100px;
-        .github__card__info__repository{
+        @include mobile{
+            margin: 30px 0;
+        }
+        
+        &__repository{
+            @include mobile {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+            }
             p{
                 text-transform: uppercase;
                 font-weight: 600;
                 margin-bottom: 20px;
+            }
+        }
+    }
+    
+    .github__card__result{
+        width: 100%;
+        background: #ebf6ee;
+        margin-top: 30px;
+        max-height: 0;
+        overflow: hidden;
+
+        &__title {
+            margin: 30px 50px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        &__list{
+            margin: 30px 50px;
+            ul li {
+                padding: 10px;
+                &:nth-child(odd){
+                    background-color: #fff; 
+                }
             }
         }
     }

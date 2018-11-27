@@ -1,14 +1,17 @@
 .about{
     font-family: 'Roboto', sans-serif;
     padding: 100px 0;
-    .about__title{
+    &__title{
         font-size: 32px; 
         letter-spacing: 3px;
         text-align: center;
         font-weight: 600;
     }
-    .about__content{
+    &__content{
         margin-top: 80px;
+        @include mobile {
+            padding: 0 20px;
+        }
         p{
             margin-top: 30px;
         }
