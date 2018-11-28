@@ -24,10 +24,14 @@ npm install -g gulp-cli
 
 ## Instalação
 
-1 - Fazer o clone do projeto:
+1 - Fazer o clone do projeto e alterar a branch:
 
 `` 
 git clone git@github.com:ldrbraga/desafio-frontend.git && cd desafio-frontend
+`` 
+
+`` 
+git checkout leandro-braga
 `` 
 
 2 - Executar a instalação das dependências, via Node Package Manager:
