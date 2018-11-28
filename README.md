@@ -2,6 +2,8 @@
 
 Projeto desenvolvido em HTML, CSS e JavaScript, utilizando ES6.
 
+Utilizado o task runner Gulp.
+
 Para padronização das classes foi utilizada a metodologia BEM e para arquitetura o SMACSS.
 
 As instruções abaixo fornecem uma cópia do projeto em funcionamento na sua máquina local.
